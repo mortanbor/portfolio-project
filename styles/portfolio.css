@@ -39,6 +39,16 @@ p.about-project {
   font-size: 18px;
 }
 
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+  list-style: none;
+}
+
 .hero {
   padding: 240px 20px;
   background-color: var(--main-bg-color);
@@ -127,6 +137,10 @@ p.about-project {
 
 .project-discription {
   padding: 120px 60px;
+}
+
+.logo {
+  max-width: 150px;
 }
 
 @media (max-width: 900px) {

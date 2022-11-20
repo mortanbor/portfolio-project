@@ -39,6 +39,10 @@ p.about-project {
   font-size: 18px;
 }
 
+nav {
+  padding: 20px 0;
+}
+
 nav ul {
   padding: 0;
   margin: 0;
@@ -47,10 +51,76 @@ nav ul {
 nav li {
   display: inline;
   list-style: none;
+  line-height: 42px;
+  margin-left: 15px;
+}
+
+nav a {
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--second-font-color);
+  transition: all 100ms ease-in-out;
+}
+
+nav a.active {
+  color: var(--main-font-color);
+}
+
+nav a:hover {
+  color: var(--main-font-color);
+}
+
+footer {
+  margin: 60px 0;
+}
+
+footer .contact-box {
+  background-color: var(--main-bg-color);
+  padding: 50px 100px;
+  border-radius: 10px;
+}
+
+footer .contact-box h4 {
+  font-size: 48px;
+}
+
+footer .contact-box a {
+  padding: 10px 40px;
+}
+
+footer .contact-box p {
+  margin: 0;
+  font-size: 18px;
+}
+
+footer .email-link {
+  text-decoration: none;
+  color: var(--second-font-color);
+  font-size: 24px;
+}
+
+footer .email-link:hover {
+  color: var(--main-font-color);
+}
+
+footer .social-links a {
+  margin: 0 20px;
+  color: var(--main-font-color);
+  background: var(--main-bg-color);
+  padding: 10px 14px;
+  font-size: 18px;
+  border-radius: 180%;
+  transition: all 100ms ease-in-out;
+}
+
+footer .social-links a:hover {
+  color: white;
+  background-color: var(--main-font-color);
 }
 
 .hero {
-  padding: 240px 20px;
+  padding: 100px 20px;
   background-color: var(--main-bg-color);
   text-align: center;
 }
@@ -70,7 +140,7 @@ nav li {
 }
 
 .content-conteiner {
-  padding: 140px 20px;
+  padding: 60px 20px;
 }
 
 .content-conteiner-content {
@@ -140,7 +210,7 @@ nav li {
 }
 
 .logo {
-  max-width: 150px;
+  max-height: 40px;
 }
 
 @media (max-width: 900px) {
@@ -162,11 +232,12 @@ nav li {
   }
 
   .hero {
-    padding: 80px 20px;
+    padding: 40px 20px;
   }
 
   .content-conteiner {
     text-align: center;
+    padding-top: 30px;
   }
 
   .content-conteiner h1 {
@@ -181,6 +252,26 @@ nav li {
 
   .btn-branding {
     padding: 12px 24px;
+    font-size: 12px;
+  }
+
+  footer .contact-box {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  footer .contact-box h4 {
+    font-size: 28px;
+  }
+
+  footer .contact-box a {
+    line-height: 10px;
+    padding: 10px 20px;
+  }
+
+  footer .contact-box p {
+    margin-bottom: 15px;
     font-size: 12px;
   }
 }

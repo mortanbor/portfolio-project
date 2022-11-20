@@ -119,6 +119,15 @@ footer .social-links a:hover {
   background-color: var(--main-font-color);
 }
 
+.link-project a {
+  text-decoration: none;
+  color: var(--main-font-color);
+}
+
+.link-project a:hover {
+  color: var(--main-font-color);
+}
+
 .hero {
   padding: 100px 20px;
   background-color: var(--main-bg-color);
